@@ -3,8 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Shotaro's Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
-		Shotaro's Page
+		<h2>Shotaro's Page</h2>
+		<a href="#" data-toggle="tooltip" title="2006年3月生まれ5年生　　　　legoとかArduinoとかScratchとか使ってものを作るのが好きです。javascriptやphpの勉強をしています。">
+			<img id="s" src="img/s-01.jpg" width="90" height="144">
+		</a>
+		<script src="js/jquery-1.11.3.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("[data-toggle=tooltip]").tooltip({
+					placement: "right"
+				});
+			});
+		</script>
 	</body>
 </html>
