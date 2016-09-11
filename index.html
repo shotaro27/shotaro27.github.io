@@ -1,24 +1,125 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Shotaro's Page</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	</head>
-	<body>
-		<h2>Shotaro's Page</h2>
-		<a href="#" data-toggle="tooltip" title="2006年3月生まれ5年生　　　　legoとかArduinoとかScratchとか使ってものを作るのが好きです。javascriptやphpの勉強をしています。">
-			<img id="s" src="img/s-01.jpg" width="90" height="144">
-		</a>
-		<script src="js/jquery-1.11.3.min.js"></script>
-	    <script src="js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				$("[data-toggle=tooltip]").tooltip({
-					placement: "right"
-				});
-			});
-		</script>
-	</body>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Shotaro's factory</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/mycss.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+		<div style="margin:10px;">
+    		<ul class="nav nav-tabs">
+    			<li class="active">
+    				<a href="index.html"><i class="glyphicon glyphicon-home"></i> home</a>
+    			</li>
+    			<li><a href="prf.html">Profile</a></li>
+    			<li><a href="soumatome1.html">Arduino</a></li>
+    			<li><a href="soumatome2.html">Scratch</a></li>
+    			<li><a href="soumatome3.html">LEGO</a></li>
+				<li><a href="soumatome4.html">Picture</a></li>
+    		</ul>
+    	</div>
+    <p class="title">Shotaro's factory</p>
+    <div id="carousel-example-generic" class="carousel slide" style="background:royalblue
+;" data-ride="carousel" height="360" width="480">
+      	<ol class="carousel-indicators">
+        	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        	<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        	<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      	</ol>
+      	<div class="carousel-inner" role="listbox">
+			<div class="item active">
+	          	<img src="img/shakutori.jpg" width="480" alt="尺取り虫ロボット">
+	          	<div class="carousel-caption">
+	            	尺取り虫ロボット
+	          	</div>
+			</div>
+	        <div class="item">
+	          	<img src="img/dasi.JPG" height="360" width="480" alt="山車製作中">
+	          	<div class="carousel-caption">
+	            	山車製作中
+	          	</div>
+	        </div>
+			<div class="item">
+	          	<img src="img/densipi.JPG" height="360" width="480" alt="電子ピアノ">
+	          	<div class="carousel-caption">
+	            	電子ピアノ
+	          	</div>
+	        </div>
+			<div class="item">
+	          	<img src="img/c.jpg" width="480" alt="作っているところ">
+	          	<div class="carousel-caption">
+	            	作っているところ
+	          	</div>
+			</div>
+      	</div>
+      	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        	<span class="sr-only">Previous</span>
+      	</a>
+      	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        	<span class="sr-only">Next</span>
+      	</a>
+    </div><hr>
+
+	<div class="container">
+		<h4>2016/9/11</h4>
+		<hr>
+		<h3 class="rb">あいちトリエンナーレ2016ツクロッカに参加しています！</h3>
+	</div>
+	<div class="container">
+		<div class="row kiji">
+			<div class="col-sm-5">
+				<img src="img/tuku_s.jpg">
+			</div>
+			<div class="col-sm-7">
+				今日、栄の愛知芸術文化センターの地下二階のアートスペースXに、
+				自分の作品を出したあいちトリエンナーレ2016ツクロッカを見に行ってきました。
+				こちらは、会場風景です。
+			</div>
+		</div>
+		<div class="row kiji">
+			<div class="col-sm-5">
+				<img src="img/tori_s.jpg">
+			</div>
+			<div class="col-sm-7">
+				こちらは、トリンポリンです。<br>
+				ネコのサーカスのトランポリンで卵から孵った小鳥が、
+				トランポリンで遊んでいる様子を表現しました。<br>
+				隣の作品のネコが滑り台から一番下に降りてきた時に、
+				スイッチが入って作品が動きます。<br>
+				ですが、ネコが降りてきた時に、横にずれたりして、
+				スイッチがうまく入らないことがありました。
+				<p>
+					<a href="https://youtu.be/ZbhYGwOCGXU">YouTubeで見る</a>
+				</p>
+			</div>
+		</div>
+		<div class="row kiji">
+			<div class="col-sm-5">
+				<img src="img/tamanori_s.jpg">
+			</div>
+			<div class="col-sm-7">
+				こちらは、復活した玉のりネコです。<br>
+				玉乗りの演目が無くなったネコのサーカスに虹色ネコが来て、
+				見事玉乗りを成功させた様子を表現しました。
+				<p>
+					<a href="https://www.youtube.com/watch?v=12OJSBRtkm4">YouTubeで見る</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="back-to-top">
+		<a href="#"><img src="img/top.png" style="position:fixed;right:5px;bottom:5px"></a>
+	</div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/myjs.js"></script>
+	<script src="js/lightbox.min.js"></script>
+  </body>
 </html>
