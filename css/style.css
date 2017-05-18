@@ -239,13 +239,15 @@ nav#tf-footer {
 	text-align: left;
 }
 .ybtn{
-	background: lightgray;
-	color: royalblue;
+	background: mediumaquamarine;
+	color: whitesmoke;
+	border-radius: 0.5em;
 }
 .ybtn:hover{
-	background: whitesmoke;
+	background: aquamarine;
 	color: navy;
 	font-weight: bold;
+	border-radius: 0.5em;
 }
 .topbtn{
 	position:fixed;
