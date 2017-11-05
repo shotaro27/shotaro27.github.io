@@ -245,12 +245,16 @@ nav#tf-footer {
 	background: mediumaquamarine;
 	color: whitesmoke;
 	border-radius: 0.5em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 .ybtn:hover{
 	background: aquamarine;
 	color: royalblue;
 	font-weight: bold;
 	border-radius: 0.5em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 .topbtn{
 	position:fixed;
