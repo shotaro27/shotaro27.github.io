@@ -152,60 +152,60 @@
                 <hr>
             </div>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4" data-toggle="tooltip" title="きのこ・たけのこにょきにょき対決!">
 					<a href="https://www.youtube.com/watch?v=Me1GSzSIiFc"><img src="img/arduino-p/kinotake800600.jpg" class="img-responsive"></a>
                 </div>
-				<div class="col-md-4">
+				<div class="col-md-4" data-toggle="tooltip" title="ROBOCON30th ロゴ描いちゃおう!対決">
 					<a href="https://www.youtube.com/watch?v=5eufbpdG524"><img src="img/arduino-p/logo800600.jpg" class="img-responsive"></a>
                 </div>
-				<div class="col-md-4">
+				<div class="col-md-4" data-toggle="tooltip" title="海の世界">
                     <a href="https://www.youtube.com/watch?v=TEPvs2Yt3_w"><img src="img/arduino-p/umi800600.jpg" class="img-responsive"></a>
                 </div>
 			</div>
 			<div class="row toppadding">
-				<div class="col-md-4">
+				<div class="col-md-4" data-toggle="tooltip" title="Wi-Fi経由でフルカラーLEDを制御してみた">
 					<a href="https://www.youtube.com/watch?v=sKrD1F3JgYk"><img src="img/arduino-p/rgbled800600.jpg" class="img-responsive"></a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4" data-toggle="tooltip" title="はこまねき">
 					<a href="https://www.youtube.com/watch?v=YxAdmb1ZGUE"><img src="img/arduino-p/maneki800600.jpg" class="img-responsive"></a>
                 </div>
-				<div class="col-md-4">
+				<div class="col-md-4" data-toggle="tooltip" title="ふりふりそうじロボ">
                     <a href="https://www.youtube.com/watch?v=R6JEkDPUQNQ"><img src="img/arduino-p/souji800600.jpg" class="img-responsive"></a>
                 </div>
 			</div>
 			<div class="row toppadding">
-				<div class="col-md-4">
+				<div class="col-md-4" data-toggle="tooltip" title="火星に文明を起こそう">
 					<a href="https://www.youtube.com/watch?v=gYv-SF8BcJc"><img src="img/arduino-p/kasei800600.jpg" class="img-responsive"></a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4" data-toggle="tooltip" title="キラキラミュージックBOX">
                     <a href="https://www.youtube.com/watch?v=-1Yy2Zu4Lzc"><img src="img/arduino-p/music800600.jpg" class="img-responsive"></a>
                 </div>
-				<div class="col-md-4">
+				<div class="col-md-4" data-toggle="tooltip" title="シャクトリムシロボット">
                     <a href="https://www.youtube.com/watch?v=_uZ9vwFK4Tc"><img src="img/arduino-p/shakutori800600.jpg" class="img-responsive"></a>
                 </div>
 			</div>
 			<div class="row toppadding">
-				<div class="col-md-4">
+				<div class="col-md-4" data-toggle="tooltip" title="わくわくクイズマシン">
 					<a href="https://www.youtube.com/watch?v=96jULMCVNYs"><img src="img/arduino-p/quiz800600.jpg" class="img-responsive"></a>
 				</div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-toggle="tooltip" title="-Mother's day-">
                     <a href="https://www.youtube.com/watch?v=39qJ92ZqaX0"><img src="img/arduino-p/mother800600.jpg" class="img-responsive"></a>
                 </div>
-				<div class="col-md-4">
+				<div class="col-md-4" data-toggle="tooltip" title="自動平衡二輪車">
                     <a href="https://www.youtube.com/watch?v=jWlHr7mMJYY"><img src="img/arduino-p/nirin800600.jpg" class="img-responsive"></a>
                 </div>
 			</div>
 			<div class="row toppadding">
-				<div class="col-md-3">
+				<div class="col-md-3" data-toggle="tooltip" title="圧電スピーカーを使ってWe wish you a merry christmas">
 					<a href="https://www.youtube.com/watch?v=6HhP1nm6Kiw"><img src="img/arduino-p/christmas800600.jpg" class="img-responsive"></a>
 				</div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-toggle="tooltip" title="圧電スピーカーを使ってキラキラ星">
                     <a href="https://www.youtube.com/watch?v=EX-3zKw-fco"><img src="img/arduino-p/atukira800600.jpg" class="img-responsive"></a>
                 </div>
-				<div class="col-md-3">
+				<div class="col-md-3" data-toggle="tooltip" title="液晶に表示させる">
                     <a href="https://www.youtube.com/watch?v=cZ-4XeI_rSs"><img src="img/arduino-p/unko800600.jpg" class="img-responsive"></a>
                 </div>
-				<div class="col-md-3">
+				<div class="col-md-3" data-toggle="tooltip" title="スピログラフマシーン">
                     <a href="https://www.youtube.com/watch?v=3QQKD958s2c"><img src="img/arduino-p/spiro800600.jpg" class="img-responsive"></a>
                 </div>
 			</div>
@@ -559,5 +559,10 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 	<script src="js/lightbox.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('[data-toggle=tooltip]').tooltip();
+		});
+	</script>
 </body>
 </html>
