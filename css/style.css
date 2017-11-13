@@ -24,7 +24,7 @@ h4 {
 	margin-bottom: 20px;
 	font-size: 16px;
 	font-weight: 700;
-	color: sandybrown;
+	color: tomato;
 }
 p{
 	font-size: 13px;
@@ -36,7 +36,7 @@ a {
 	font-family: 'Signika', cursive;
 }
 a:hover{
-	color: sandybrown;
+	color: tomato;
 	text-decoration: none;
 }
 img {
@@ -79,7 +79,7 @@ img {
 .content{
 	padding: 15% 0 18% 0;
 	text-align: center;
-	color: sandybrown;
+	color: tomato;
 }
 #tf-menu {
 	margin-bottom: 0;
@@ -114,7 +114,7 @@ img {
 }
 #tf-menu.navbar-default .navbar-nav > li > a:hover,
 #tf-menu.navbar-default .navbar-nav > li > a:focus {
-	color: sandybrown;
+	color: tomato;
 	background-color: transparent;
 }
 .logo {
@@ -132,7 +132,7 @@ img {
 .media-left.media-middle i {
 	padding: 20px 30px 20px 0;
 	font-size: 30px;
-	color: sandybrown;
+	color: tomato;
 }
 .media-body h4 {
 	margin-bottom: 20px;
@@ -155,7 +155,7 @@ img {
 	text-align: center;
 }
 .section-title hr{
-	border-color: sandybrown;
+	border-color: tomato;
 	width: 60px;
 }
 .section-title h2{ font-weight: 700;}
@@ -165,7 +165,7 @@ a.btn {
 	transition: all 0.5s;
 }
 .sub-title hr{
-	border-color: sandybrown;
+	border-color: tomato;
 	width: 120px;
 }
 .sub-title h4{ font-weight: 600;}
@@ -177,7 +177,7 @@ a.btn {
 button.btn.btn-primary.my-btn,
 a.btn.btn-primary.my-btn,
 a.btn.btn-primary.my-btn2:hover{
-	background: sandybrown;
+	background: tomato;
 	border-color: pink;
 	border-radius: 3px;
 	border-width: 2px;
