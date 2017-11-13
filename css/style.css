@@ -225,7 +225,7 @@ ul.cat.list-inline li a:hover{
 	background-position: center;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
-	color: sandybrown;
+	color: tomato;
 	text-shadow: 2px 2px 1px white;
 }
 #tf-about .overlay{
@@ -234,7 +234,7 @@ ul.cat.list-inline li a:hover{
 	padding: 10% 0;
 }
 nav#tf-footer {
-	background: sandybrown;
+	background: tomato;
 	padding: 3% 0 2% 0;
 	color: whitesmoke;
 }
@@ -251,7 +251,7 @@ nav#tf-footer {
 }
 .ybtn:hover{
 	background: pink;
-	color: sandybrown;
+	color: tomato;
 	font-weight: bold;
 	border-radius: 0.5em;
 	text-transform: uppercase;
