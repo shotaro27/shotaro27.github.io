@@ -24,7 +24,7 @@ h4 {
 	margin-bottom: 20px;
 	font-size: 16px;
 	font-weight: 700;
-	color: gray;
+	color: green;
 }
 p{
 	font-size: 13px;
@@ -36,7 +36,7 @@ a {
 	font-family: 'Signika', cursive;
 }
 a:hover{
-	color: gray;
+	color: green;
 	text-decoration: none;
 }
 img {
