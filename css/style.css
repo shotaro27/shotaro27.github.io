@@ -24,7 +24,7 @@ h4 {
 	margin-bottom: 20px;
 	font-size: 16px;
 	font-weight: 700;
-	color: tomato;
+	color: gray;
 }
 p{
 	font-size: 13px;
@@ -36,7 +36,7 @@ a {
 	font-family: 'Signika', cursive;
 }
 a:hover{
-	color: tomato;
+	color: gray;
 	text-decoration: none;
 }
 img {
@@ -79,7 +79,7 @@ img {
 .content{
 	padding: 15% 0 18% 0;
 	text-align: center;
-	color: tomato;
+	color: aqua;
 }
 #tf-menu {
 	margin-bottom: 0;
@@ -114,7 +114,7 @@ img {
 }
 #tf-menu.navbar-default .navbar-nav > li > a:hover,
 #tf-menu.navbar-default .navbar-nav > li > a:focus {
-	color: tomato;
+	color: royalblue;
 	background-color: transparent;
 }
 .logo {
@@ -132,13 +132,13 @@ img {
 .media-left.media-middle i {
 	padding: 20px 30px 20px 0;
 	font-size: 30px;
-	color: tomato;
+	color: royalblue;
 }
 .media-body h4 {
 	margin-bottom: 20px;
 	font-size: 16px;
 	font-weight: 700;
-	color: tomato;
+	color: royalblue;
 }
 #tf-portfolio{
 	background: #cccccc;
@@ -155,7 +155,7 @@ img {
 	text-align: center;
 }
 .section-title hr{
-	border-color: tomato;
+	border-color: yellow;
 	width: 60px;
 }
 .section-title h2{ font-weight: 700;}
@@ -165,7 +165,7 @@ a.btn {
 	transition: all 0.5s;
 }
 .sub-title hr{
-	border-color: tomato;
+	border-color: royalblue;
 	width: 120px;
 }
 .sub-title h4{ font-weight: 600;}
@@ -177,8 +177,8 @@ a.btn {
 button.btn.btn-primary.my-btn,
 a.btn.btn-primary.my-btn,
 a.btn.btn-primary.my-btn2:hover{
-	background: tomato;
-	border-color: pink;
+	background: royalblue;
+	border-color: aqua;
 	border-radius: 3px;
 	border-width: 2px;
 	padding: 10px 30px;
@@ -186,13 +186,13 @@ a.btn.btn-primary.my-btn2:hover{
 	font-size: 12px;
 	letter-spacing: 1px;
 	font-weight: 600;
-	color: pink;
+	color: aqua;
 }
 button.btn.btn-primary.my-btn:hover,
 a.btn.btn-primary.my-btn:hover,
 a.btn.btn-primary.my-btn2 {
 	background: transparent;
-	border-color: pink;
+	border-color: aqua;
 	border-radius: 3px;
 	border-width: 2px;
 	padding: 10px 30px;
@@ -200,22 +200,22 @@ a.btn.btn-primary.my-btn2 {
 	font-size: 12px;
 	letter-spacing: 1px;
 	font-weight: 600;
-	color: pink;
+	color: aqua;
 }
 ul.cat.list-inline li a {
-	border: 1px solid plum;
+	border: 1px solid aquamarine;
 	padding: 5px 15px;
 	font-size: 11px;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 1px;
-	color: plum;
+	color: aquamarine;
 	transition: all 0.5s;
 }
 
 ul.cat.list-inline li a:hover{
-	background: plum;
-	color: #ffffff;
+	background: aquamarine;
+	color: whitesmoke;
 }
 .space{ padding: 20px}
 .toppadding{ padding-top: 30px}
@@ -225,7 +225,7 @@ ul.cat.list-inline li a:hover{
 	background-position: center;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
-	color: tomato;
+	color: royalblue;
 	text-shadow: 2px 2px 1px white;
 }
 #tf-about .overlay{
@@ -234,7 +234,7 @@ ul.cat.list-inline li a:hover{
 	padding: 10% 0;
 }
 nav#tf-footer {
-	background: tomato;
+	background: royalblue;
 	padding: 3% 0 2% 0;
 	color: whitesmoke;
 }
@@ -242,7 +242,7 @@ nav#tf-footer {
 	text-align: left;
 }
 .ybtn{
-	background: plum;
+	background: aquamarine;
 	color: whitesmoke;
 	border-radius: 0.5em;
 	text-transform: uppercase;
@@ -250,8 +250,8 @@ nav#tf-footer {
 	padding: 2px;
 }
 .ybtn:hover{
-	background: pink;
-	color: tomato;
+	background: aqua;
+	color: royalblue;
 	font-weight: bold;
 	border-radius: 0.5em;
 	text-transform: uppercase;
