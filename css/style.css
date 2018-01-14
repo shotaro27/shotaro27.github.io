@@ -134,23 +134,29 @@ img {
 	font-size: 30px;
 	color: royalblue;
 }
-.media-body h4 {
+.media-body .media-heading {
 	margin-bottom: 20px;
 	font-size: 16px;
 	font-weight: 700;
 	color: royalblue;
 }
+.media-body .media-heading2 {
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 800;
+	color: lightgreen;
+}
 #tf-portfolio{
 	background: #cccccc;
-	background: -moz-linear-gradient(top, #ffffff 0%, #999999 5%, #999999 10%, #b2b2b2 20%, #e5cece 30%, #7f6666 40%, #b2b2b2 50%, #e5e5e5 60%, #7f7f72 70%, #938585 80%, #b2b2b2 90%, #f2f2f2 100%);
-	background: -webkit-linear-gradient(top, #ffffff 0%,#999999 5%,#999999 10%,#b2b2b2 20%,#e5cece 30%,#7f6666 40%,#b2b2b2 50%,#e5e5e5 60%,#7f7f72 70%,#938585 80%,#b2b2b2 90%,#f2f2f2 100%);
-	background: linear-gradient(to bottom, #ffffff 0%,#999999 5%,#999999 10%,#b2b2b2 20%,#e5cece 30%,#7f6666 40%,#b2b2b2 50%,#e5e5e5 60%,#7f7f72 70%,#938585 80%,#b2b2b2 90%,#f2f2f2 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 );
+	background: -moz-linear-gradient(top, #cccccc 0%, #ffffff 100%);
+	background: -webkit-linear-gradient(top, #cccccc 0%, #ffffff 100%);
+	background: linear-gradient(to bottom, #cccccc 0%, #ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=0 );
 	padding: 5%  0 8% 0;
 	text-align: center;
 }
 #tf-event{
-	background: url("../img/08.jpg");
+	background: url(../img/08.jpg);
 	padding: 5%  0 8% 0;
 	text-align: center;
 }
