@@ -147,11 +147,11 @@ img {
 	color: lightgreen;
 }
 #tf-portfolio{
-	background: #cccccc;
-	background: -moz-linear-gradient(top, #cccccc 0%, #ffffff 100%);
-	background: -webkit-linear-gradient(top, #cccccc 0%, #ffffff 100%);
-	background: linear-gradient(to bottom, #cccccc 0%, #ffffff 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=0 );
+	background: white;
+	background: -moz-linear-gradient(top, white 0%, #cccccc 100%);
+	background: -webkit-linear-gradient(top, white 0%, #cccccc 100%);
+	background: linear-gradient(to bottom, white 0%, #cccccc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='white', endColorstr='#cccccc',GradientType=0 );
 	padding: 5%  0 8% 0;
 	text-align: center;
 }
