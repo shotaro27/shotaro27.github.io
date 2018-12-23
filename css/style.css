@@ -232,7 +232,7 @@ ul.cat.list-inline li a:hover{
 	background-attachment: scroll;
 	background-repeat: no-repeat;
 	color: royalblue;
-	text-shadow: 2px 2px 1px white;
+	text-shadow: 0px 0px 1px white;
 }
 #tf-about .overlay{
 	height: auto;
