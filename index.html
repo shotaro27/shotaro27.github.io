@@ -21,36 +21,36 @@
             <div id="sticky-anchor"></div>
 			<nav id="tf-menu" class="navbar navbar-default">
 		        <div class="container">
-		            <div class="navbar-header">
-		              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		                <span class="sr-only">Toggle navigation</span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		              </button>
-		              <a class="navbar-brand logo" href="index.html">Shotaro's factory</a>
-		            </div>
-		            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		              <ul class="nav navbar-nav navbar-right">
-		                <li><a href="#tf-home">home</a></li>
-						<li><a href="#tf-about">profile</a></li>
-		                <li><a href="#tf-service">introduction</a></li>
-						<li class="dropdown">
-						    <a class="dropdown-toggle"
-						       data-toggle="dropdown"
-						       href="#">
-						        works
-						        <b class="caret"></b>
-						    </a>
-						    <ul class="dropdown-menu">
-								<li><a href="#tfw-arduino">arduino,ESP8266</a></li>
-								<li><a href="#tfw-lego">lego</a></li>
-								<li><a href="#tfw-scratch">scratch</a></li>
-								<li><a href="#tfw-others">others</a></li>
-								<li><a href="#tfw-picture">picture</a></li>
-						    </ul>
+					<a class="navbar-brand logo" href="#">Shotaro's factory</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcoll" aria-controls="navcoll" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+		            <div class="collapse navbar-collapse" id="navcoll">
+		              <ul class="nav navbar-nav navbar-right mr-auto">
+		                <li class="nav-item active">
+							<a class="nav-link" href="#tf-home">Home</a>
 						</li>
-		                <li><a href="#tf-event">event</a></li>
+						<li class="nav-item">
+							<a class="nav-link" href="#tf-about">Profile</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#tf-service">Introduction</a>
+						</li>
+						<li class="nav-item dropdown">
+						    <a class="nav-link dropdown-toggle" href="#" id="navdrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						        Works
+						    </a>
+						    <div class="dropdown-menu" aria-labelledby="navdrop">
+								<a class="dropdown-item" href="#tfw-arduino">Arduino,ESP8266</a></li>
+								<a class="dropdown-item" href="#tfw-lego">Lego</a>
+								<a class="dropdown-item" href="#tfw-scratch">Scratch</a>
+								<a class="dropdown-item" href="#tfw-others">Others</a>
+								<a class="dropdown-item" href="#tfw-picture">Picture</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#tf-event">Event</a>
+						</li>
 		              </ul>
 		            </div>
 		        </div>
@@ -108,8 +108,8 @@
 	<div id="tf-about">
         <div class="container overlay">
             <div class="row">
-				<div class="col-md-6 col-sm-6"></div>
-                <div class="col-md-6 col-sm-6">
+				<div class="col-md-7 col-sm-7"></div>
+                <div class="col-md-5 col-sm-5">
                     <h3>about me : Shotaro Hirano</h3>
                     <p>2006年3月生まれ中学1年生<br>
 											LEGOやArduinoなどを使って<wbr>ものを作るのが好きです。<br>
