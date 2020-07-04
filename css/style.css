@@ -148,14 +148,14 @@ img {
 }
 #tf-portfolio{
 	background: white;
-	background: -moz-linear-gradient(top, white 0%, #cccccc 100%);
-	background: -webkit-linear-gradient(top, white 0%, #cccccc 100%);
-	background: linear-gradient(to bottom, white 0%, #cccccc 100%);
+	background: -moz-linear-gradient(top, white 0%, #eeeeee 100%);
+	background: -webkit-linear-gradient(top, white 0%, #eeeeee 100%);
+	background: linear-gradient(to bottom, white 0%, #eeeeee 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='white', endColorstr='#cccccc',GradientType=0 );
 	padding: 5%  0 8% 0;
 	text-align: center;
 }
-#tf-event{
+#tf-event, #tf-media, #tf-history{
 	background: url(../img/08.jpg);
 	padding: 5%  0 8% 0;
 	text-align: center;
@@ -269,4 +269,10 @@ nav#tf-footer {
 	right:5px;
 	bottom:5px;
 	width: 30px;
+}
+.mylinklist{
+	color:violet;
+}
+.mylinklist:hover{
+	color:lightskyblue;
 }
