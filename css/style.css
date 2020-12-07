@@ -276,9 +276,9 @@ nav#tf-footer {
 .mylinklist:hover{
 	color:lightskyblue;
 }
-.mylinklistblue{
+.mylinklist.mylinklistblue{
 	color:lightskyblue;
 }
-.mylinklistblue:hover{
+.mylinklist.mylinklistblue:hover{
 	color:deepskyblue;
 }
