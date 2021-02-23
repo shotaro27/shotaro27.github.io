@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shotaro's factory-event-2016/09/11</title>
+    <meta name="description" content="Your Description Here">
+    <meta name="keywords" content="bootstrap themes, portfolio, responsive theme">
+    <meta name="author" content="ThemeForces.Com">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+    <link rel="stylesheet" type="text/css"  href="../css/bootstrap.css">
+	<link href="../css/lightbox.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.css">
+    <script type="text/javascript" src="../js/modernizr.custom.js"></script>
+	<link rel="stylesheet" type="text/css"  href="../css/style.css">
+    <style>
+        /* body {
+            background: url(../img/DM-1_03_page-0001.jpg) no-repeat;
+        } */
+
+        #tf-event{
+            background: none;
+            font-family: serif;
+            font-size: 5%;
+            padding: 0;
+        }
+
+        #theme-text > *{
+            text-align: center;
+        }
+
+        .container-fluid {
+            padding: 0%;
+        }
+    </style>
+</head>
+<body>
+	<div id="tf-event">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-5">
+					<img class="d-none d-lg-block" src="../img/DM-1_03_page-0001.jpg">
+				</div>
+				<div class="col-lg-7 align-left">
+                    <div class="row" id="theme-text">
+                        <div class="space"></div>
+                        <h1 class="title col-12">メガネという共生生物についての考察</h1>
+                        <h2 class="sub-title col-12">～MasatoIto 創作眼鏡展 2021 <wbr> ft.平野あかね～</h2>
+                        <div class="space"></div>
+                        <h3 class="col-12">3月2日(火) ～ 3月7日(日)</h3>
+                        <h3 class="col-12">10:00～18:00（会期最終日は16:00まで</h3>
+                        <h3 class="col-12">ノリタケの森ギャラリー　第二展示室</h3>
+                        <div class="space"></div>
+                        <p class="col-12">
+                            3月７日（日）10：00～16：00は、会場の様子をライブ配信いたします。<br>
+                            時間になりましたら、こちらのページからアクセス可能となります。<br>
+                            参加形の展覧会になっておりますので、ぜひご参加ください。
+                        </p>
+                        <div class="space"></div>
+                        <a id="go" href="https://www.noritake.co.jp/mori/look/gallery_detail/265/" class="btn btn-dark text-white offset-4 col-4">展覧会ウェブサイト</a>
+                    </div>
+				</div>
+			</div>
+			<!-- <a onclick="history.back()" class="btn btn-primary my-btn">戻る</a> -->
+		</div>
+		<div id="back-to-top">
+			<a href="#tf-home"><img src="../img/top.png" class="topbtn"></a>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <!-- <script type="text/javascript" src="../js/main.js"></script> -->
+	<script src="../js/lightbox.min.js"></script>
+	<script>
+		const startdate = new Date("2021-02-23T01:22:00");
+        const nodisabled = () => {
+            $("#go").text("LIVE");
+            $("#go").attr("href", "https://meganecolors.azurewebsites.net/");
+        }
+        if (startdate < Date.now()) {
+            nodisabled();
+        } else {
+            setTimeout(nodisabled, startdate - Date.now());
+        }
+    </script>
+</body>
+</html>
