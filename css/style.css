@@ -33,7 +33,7 @@ p{
 a {
 	color: #ffffff;
 	transition: all 0.8;
-	font-family: 'Signika', cursive;
+	font-family: 'Signika', cursive, sans-serif;
 }
 a:hover{
 	color: green;
