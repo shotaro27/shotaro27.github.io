@@ -1,5 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu);
 @import url(//fonts.googleapis.com/css?family=Signika);
+@import url(//fonts.googleapis.com/css?family=Noto%20Sans%20JP);
 
 body, html{
 	font-family: 'Ubuntu', sans-serif;
@@ -33,7 +34,7 @@ p{
 a {
 	color: #ffffff;
 	transition: all 0.8;
-	font-family: sans-serif;
+	font-family: "Noto Sans JP", sans-serif;
 }
 a:hover{
 	color: green;
