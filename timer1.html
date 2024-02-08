@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>受験タイマー</title>
+	<style>
+		#countdown {
+			position: relative;
+			top: 50vh;
+			transform: translate3d( 0, -50%, 0 );
+			font-size: 5rem;
+			line-height: 1.6;
+			animation: fadein 3.4s linear forwards;
+		}
+
+			#countdown .num {
+				font-size: 10rem;
+				vertical-align: baseline;
+			}
+
+		#countdown .small {
+			font-size: 3rem;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<div id="countdown">
+			国公立2次<span class="small">(2024/02/25 9:00)</span>まであと<br />
+			<div id="time"></div>
+		</div>
+	</div>
+	<script>
+		const time = document.getElementById("time");
+
+		const targetDate = new Date(2024, 1, 25, 9, 00);
+
+		const obj = document.getElementById('time');
+
+		const countdown = () => {
+			const now = new Date();
+			const distance = targetDate - now;
+
+			if (distance < 0) {
+				obj.innerHTML = "カウントダウン終了！";
+
+			} else {
+				const hours = Math.floor(distance / (1000 * 60 * 60));
+				const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				const miliseconds = distance < 0 ? 0 : Math.floor(distance % 1000);
+
+				obj.innerHTML = `<span class="hours num">${String(hours).padStart(2, '0')}</span>時間<span class="minutes num">${String(minutes).padStart(2, '0')}</span>分<span class="seconds num">${String(seconds).padStart(2, '0')}</span>.${String(miliseconds).padStart(3, '0')}秒`;
+				window.requestAnimationFrame(countdown);
+			}
+		}
+
+		window.requestAnimationFrame(countdown);
+	</script>
+</body>
+</html>
