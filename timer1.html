@@ -2,55 +2,98 @@
 <html>
 <head>
 	<title>受験タイマー</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<style>
-		#countdown {
+		html, body {
+			height: 100%;
+		}
+
+		body {
+			background: linear-gradient(white 75%, #cff);
+		}
+
+		.container .main-parent {
+			margin-left: 3vw;
+			margin-right: 3vw;
+		}
+
+		.mainobj {
 			position: relative;
 			top: 50vh;
 			transform: translate3d( 0, -50%, 0 );
-			font-size: 5rem;
+			font-size: 5vw;
 			line-height: 1.6;
 			animation: fadein 3.4s linear forwards;
+			text-align: center;
+			font-family: 'Roboto', 'M PLUS 1p', sans-serif;
+			font-weight: 400;
 		}
 
-			#countdown .num {
-				font-size: 10rem;
+			.mainobj .num {
+				font-size: 12vw;
 				vertical-align: baseline;
+				font-weight: 700;
 			}
 
-		#countdown .small {
-			font-size: 3rem;
+			.mainobj .fight {
+				font-size: 15vw;
+				vertical-align: baseline;
+				font-weight: 700;
+			}
+
+			.mainobj .small {
+				font-size: 3vw;
+				font-weight: 400;
+			}
+
+		#date {
+			display: none;
 		}
 	</style>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 <body>
-	<div class="container">
-		<div id="countdown">
-			国公立2次<span class="small">(2024/02/25 9:00)</span>まであと<br />
+	<div class="container main-parent">
+		<div id="countdown" class="mainobj">
+			国公立2次<span class="small">(2024/02/25 0:00)</span>まであと<br />
 			<div id="time"></div>
+		</div>
+		<div id="date" class="mainobj">
+			2024/02/25
+			<div class="fight">
+				FIGHT!!
+			</div>
+			<div class="small">
+				みんないっしょに頑張ろうな！！
+			</div>
 		</div>
 	</div>
 	<script>
 		const time = document.getElementById("time");
 
-		const targetDate = new Date(2024, 1, 25, 9, 00);
+		const targetDate = new Date(2024, 1, 25, 0, 00);
+		//const targetDate = new Date(2024, 1, 9, 22, 37);
 
 		const obj = document.getElementById('time');
+		const countdownobj = document.getElementById('countdown');
+		const fightobj = document.getElementById('date');
 
 		const countdown = () => {
 			const now = new Date();
 			const distance = targetDate - now;
 
 			if (distance < 0) {
-				obj.innerHTML = "カウントダウン終了！";
-
+				countdownobj.style.display = "none";
+				fightobj.style.display = "block";
 			} else {
 				const hours = Math.floor(distance / (1000 * 60 * 60));
 				const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 				const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-				const miliseconds = distance < 0 ? 0 : Math.floor(distance % 1000);
+				const miliseconds = distance < 0 ? 0 : Math.floor((distance % 1000) / 100);
 
-				obj.innerHTML = `<span class="hours num">${String(hours).padStart(2, '0')}</span>時間<span class="minutes num">${String(minutes).padStart(2, '0')}</span>分<span class="seconds num">${String(seconds).padStart(2, '0')}</span>.${String(miliseconds).padStart(3, '0')}秒`;
+				obj.innerHTML = `<span class="hours num">${String(hours).padStart(2, '0')}</span>時間 <span class="minutes num">${String(minutes).padStart(2, '0')}</span>分 <span class="seconds num">${String(seconds).padStart(2, '0')}</span>秒`;
 				window.requestAnimationFrame(countdown);
 			}
 		}
