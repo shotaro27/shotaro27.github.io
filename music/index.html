@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKIzNiL / 伴奏制作</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<style>
+		html {
+			min-height: 100%;
+		}
+
+		body {
+			background: linear-gradient(white 75%, #cff);
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+		}
+
+		.main {
+			text-align: center;
+			font-family: 'Roboto', 'M PLUS 1p', sans-serif;
+			width: 80%;
+		}
+
+		@media screen and (max-width: 576px) {
+			.main {
+				width: 100%;
+			}
+		}
+
+		.main h1 {
+			line-height: 1.6;
+			font-weight: 700;
+		}
+
+		.main h2 {
+			line-height: 1.4;
+			font-weight: 700;
+		}
+
+		.youtube {
+			margin: 2%;
+			aspect-ratio: 16 / 9;
+		}
+
+		.youtube iframe {
+			width: 100%;
+			height: 100%;
+		}
+
+		.samples, .prices {
+			position: relative;
+			width: 100%;
+			padding: 2%;
+			border-radius: 3%;
+		}
+
+		.samples {
+			background-color: #0f03;
+		}
+
+		.prices {
+			background-color: #0ff3;
+		}
+
+		.akizicon {
+			width: 10%;
+			border-radius: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container main-parent">
+		<div class="main">
+			<br>
+			<a href="https://x.com/SOtaroTombo" target="_blank">
+				<img src="akizicon.png" class="akizicon">
+			</a>
+			<h1>伴奏制作依頼 / AKIzNiL</h1>
+			<p>歌ってみた・歌枠等で使用できる伴奏制作を承っています。</p>
+			<p>M's Create.様の業務請負という形で著作権管理団体との契約も行っていますので、<br>安心してご依頼頂けます。</p>
+			<hr>
+			<div class="samples">
+				<h2>音源サンプル</h2>
+				<div class="youtube">
+					<iframe
+						src="https://www.youtube.com/embed/OLjL-c1vsOY?si=zBqWtf_HcVNGMWG9"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+						class="yvideo"
+					></iframe>
+				</div>
+				<div class="youtube">
+					<iframe
+						src="https://www.youtube.com/embed/5x5gF4zzP3Y?si=Famn3sFyn-slh1Ti"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+						class="yvideo"
+					></iframe>
+				</div>
+				<div class="youtube">
+					<iframe
+						src="https://www.youtube.com/embed/pNha3CBliVc?si=X6U-L0LCRDtaDOxV"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+						class="yvideo"
+					></iframe>
+				</div>
+			</div>
+			<hr>
+			<div class="prices">
+				<h2>料金表</h2>
+				フルコーラス（5分まで）<br>
+				伴奏（単純）……15000円～<br>
+				伴奏（通常）……20000円～<br>
+				伴奏（複雑）……25000円～<br>
+				<br>
+				オプション<br>
+				5分を超える場合（30秒ごと）……1000円<br>
+				<br>
+				ワンコーラス<br>
+				伴奏（通常）……10000円～<br>
+				伴奏（複雑）……12000円～<br>
+				<br>
+				オプション<br>
+				頭サビ追加……500円<br>
+				Cメロ追加……1000円<br>
+				Dメロ追加……1000円<br>
+				落ちサビ追加……1000円<br>
+			</div>
+			<hr>
+			<p>詳細のお問い合わせは<a href="https://x.com/SOtaroTombo">@SOtaroTombo</a>のDMにお願いします。</p>
+			<p></p>
+		</div>
+	</div>
+
+	<script>
+		const videos = document.getElementsByClassName("yvideo");
+
+		const pauseCommand = {
+			"event": "command",
+			"func": "pauseVideo"
+		};
+
+		const pause = () => {
+			console.log("pause");
+			for (const v of videos) {
+				console.log(v);
+				player = v.contentWindow.postMessage(JSON.stringify(pauseCommand), "https://www.youtube.com/");
+			}
+		}
+	</script>
+</body>
+</html>

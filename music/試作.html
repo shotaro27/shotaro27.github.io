@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKIzNiL / 伴奏制作</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<style>
+		html {
+			min-height: 100%;
+		}
+
+		body {
+			background: linear-gradient(white 75%, #cff);
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+		}
+
+		.main {
+			text-align: center;
+			font-family: 'Roboto', 'M PLUS 1p', sans-serif;
+			width: 80%;
+		}
+
+		@media screen and (max-width: 576px) {
+			.main {
+				width: 100%;
+			}
+		}
+
+		.main h1 {
+			line-height: 1.6;
+			font-weight: 700;
+		}
+
+		.main h2 {
+			line-height: 1.4;
+			font-weight: 700;
+		}
+
+		.youtube {
+			aspect-ratio: 16 / 9;
+		}
+
+		.youtube iframe {
+			width: 100%;
+			height: 100%;
+		}
+
+		.samples, .prices {
+			position: relative;
+			width: 100%;
+			padding: 2%;
+			border-radius: 3%;
+		}
+
+		.samples {
+			background-color: #0f03;
+		}
+
+		.prices {
+			background-color: #0ff3;
+		}
+
+		.carousel {
+			display: flex;
+			justify-content: center;
+		}
+
+		.contains {
+			width: 95%;
+			aspect-ratio: 16 / 9;
+			overflow: hidden;
+			position: relative;
+			padding: 0;
+			list-style: none;
+		}
+
+		.slide_select {
+			display: none;
+		}
+
+		.slide {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			display: none;
+		}
+
+		.scroll_button {
+			position: absolute;
+			display: block;
+			height: 30px;
+			width: 30px;
+			top: 50%;
+			margin-top: -20px;
+			border-width: 5px 5px 0 0;
+			border-style: solid;
+			border-color: #fdfdfd;
+			cursor: pointer;
+			opacity: 0.5;
+			z-index: 3;
+		}
+
+		.scroll_button:hover {
+		opacity: 1;
+		}
+
+		.scroll_prev {
+			left: 15px;
+			transform: rotate(-135deg);
+		}
+
+		.scroll_next {
+			right: 15px;
+			transform: rotate(45deg);
+		}
+
+		.move_controler {
+			position: absolute;
+			bottom: 20px;
+			width: 100%;
+			text-align: center;
+		}
+
+		.button_move {
+			display: inline-block;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			border-radius: 100%;
+			cursor: pointer;
+			opacity: 0.5;
+			z-index: 2;
+			background-color: #fdfdfd;
+		}
+
+		.button_move:hover {
+			opacity: 0.75;
+		}
+
+		.slide_select:nth-of-type(1):checked ~ .slide:nth-of-type(1) {
+			display: block;
+		}
+
+		.slide_select:nth-of-type(1):checked ~ .move_controler .button_move:nth-of-type(1) {
+			opacity: 1;
+		}
+
+		.slide_select:nth-of-type(2):checked ~ .slide:nth-of-type(2) {
+			display: block;
+		}
+
+		.slide_select:nth-of-type(2):checked ~ .move_controler .button_move:nth-of-type(2) {
+			opacity: 1;
+		}
+
+		.slide_select:nth-of-type(3):checked ~ .slide:nth-of-type(3) {
+			display: block;
+		}
+
+		.slide_select:nth-of-type(3):checked ~ .move_controler .button_move:nth-of-type(3) {
+			opacity: 1;
+		}
+
+		.akizicon {
+			width: 10%;
+			border-radius: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container main-parent">
+		<div class="main">
+			<br>
+			<a href="https://x.com/SOtaroTombo" target="_blank">
+				<img src="akizicon.png" class="akizicon">
+			</a>
+			<h1>伴奏制作依頼 / AKIzNiL</h1>
+			<p>歌ってみた・歌枠等で使用できる伴奏制作を承っています。</p>
+			<hr>
+			<div class="samples">
+				<h2>音源サンプル</h2>
+				<div class="carousel">
+					<div class="contains">
+						<input class="slide_select" type="radio" id="Slide1" name="slide_check" onchange="pause()" checked />
+						<input class="slide_select" type="radio" id="Slide2" name="slide_check" onchange="pause()" />
+						<input class="slide_select" type="radio" id="Slide3" name="slide_check" onchange="pause()" />
+						<div class="slide">
+							<div class="scroll_controler">
+								<label class="scroll_button scroll_prev" for="Slide3"></label>
+								<label class="scroll_button scroll_next" for="Slide2"></label>
+							</div>
+							<div class="youtube">
+								<iframe
+									src="https://www.youtube.com/embed/OLjL-c1vsOY?si=zBqWtf_HcVNGMWG9"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									referrerpolicy="strict-origin-when-cross-origin"
+									allowfullscreen
+									class="yvideo"
+								></iframe>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="controler_scroll">
+								<label class="scroll_button scroll_prev" for="Slide1"></label>
+								<label class="scroll_button scroll_next" for="Slide3"></label>
+							</div>
+							<div class="youtube">
+								<iframe
+									src="https://www.youtube.com/embed/5x5gF4zzP3Y?si=Famn3sFyn-slh1Ti"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									referrerpolicy="strict-origin-when-cross-origin"
+									allowfullscreen
+									class="yvideo"
+								></iframe>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="controler_scroll">
+								<label class="scroll_button scroll_prev" for="Slide2"></label>
+								<label class="scroll_button scroll_next" for="Slide1"></label>
+							</div>
+							<div class="youtube">
+								<iframe
+									src="https://www.youtube.com/embed/pNha3CBliVc?si=X6U-L0LCRDtaDOxV"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									referrerpolicy="strict-origin-when-cross-origin"
+									allowfullscreen
+									class="yvideo"
+								></iframe>
+							</div>
+						</div>
+						<div class="move_controler">
+							<label class="button_move" for="Slide1"></label>
+							<label class="button_move" for="Slide2"></label>
+							<label class="button_move" for="Slide3"></label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="prices">
+				<h2>料金表</h2>
+				フルコーラス（5分まで）<br>
+				伴奏（単純）……15000円～<br>
+				伴奏（通常）……20000円～<br>
+				伴奏（複雑）……25000円～<br>
+				<br>
+				オプション<br>
+				5分を超える場合（30秒ごと）……1000円<br>
+				<br>
+				ワンコーラス<br>
+				伴奏（通常）……10000円～<br>
+				伴奏（複雑）……12000円～<br>
+				<br>
+				オプション<br>
+				頭サビ追加……500円<br>
+				Cメロ追加……1000円<br>
+				Dメロ追加……1000円<br>
+				落ちサビ追加……1000円<br>
+			</div>
+			<hr>
+			<p>詳細のお問い合わせは<a href="https://x.com/SOtaroTombo">@SOtaroTombo</a>のDMにお願いします。</p>
+			<p></p>
+		</div>
+	</div>
+
+	<script>
+		const videos = document.getElementsByClassName("yvideo");
+
+		const pauseCommand = {
+			"event": "command",
+			"func": "pauseVideo"
+		};
+
+		const pause = () => {
+			console.log("pause");
+			for (const v of videos) {
+				console.log(v);
+				player = v.contentWindow.postMessage(JSON.stringify(pauseCommand), "https://www.youtube.com/");
+			}
+		}
+	</script>
+</body>
+</html>
