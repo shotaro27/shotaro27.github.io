@@ -283,3 +283,8 @@ nav#tf-footer {
 .mylinklist.mylinklistblue:hover{
 	color:deepskyblue;
 }
+.disabledlink{
+	color:gray;
+	pointer-events: none;
+	text-decoration: none;
+}
